@@ -8,9 +8,6 @@ RUN apk update \
 COPY ./app/requirements.txt ./
 
 RUN pip3 install -r requirements.txt
-
-COPY .env .env
-COPY .flaskenv .flaskenv
 COPY ./app ./
 
 # Make sure the script is executable
